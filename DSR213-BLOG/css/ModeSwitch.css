@@ -1,0 +1,27 @@
+/*页面背景*/
+.LightModeBG{
+	background: rgb(245, 245, 240);
+}
+.DarkModeBG{
+	background:rgb(40, 45, 50);
+}
+
+/*首页CardBox背景*/
+.LightModeCB{
+    background:rgb(255, 255, 250);
+    color: #666;
+}
+.DarkModeCB{
+    background: rgb(70, 75, 80);
+    color: #DDD;
+}
+
+/*模式切换按钮角度*/
+.LightModeSwitch{
+    color: #666;
+    transform: rotate(180deg);
+}
+.DarkModeSwitch{
+    color: #DDD;
+    transform: rotate(0deg);
+}

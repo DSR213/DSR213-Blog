@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>贰壹叁 - DSR213.Inc</title>
+
+	<!--Favicon-->
+	<link rel="icon" href="./favicon.ico" type ="image/x-icon">
+	<link rel="shortcut icon" href="./favicon.ico" type ="image/x-icon">
+	<link rel="apple-touch-icon" href="./Icon/title_icon.PNG" type ="image/x-icon">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" href="./FA5Pro/css/all.min.css">
+
+	<!--日间/夜间模式CSS-->
+	<link rel="stylesheet" type="text/css" href="./css/ModeSwitch.css">
+	
+
+	<!--JS-->
+	<script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script defer type="text/javascript" src="./js/common.js"></script>
+	<script defer type="text/javascript" src="./js/index.js"></script>
+
+	<!--日间/夜间模式CSS-->
+	<script defer type="text/javascript" src="./js/ModeSwitch.js"></script>
+</head>
+<body>
+	<div class="darkMode" id="background" :class="isLight?'LightModeBG':'DarkModeBG'">
+		<!--CardBox-->
+		<div id="cardBox" class="test" :class="isLight?'LightModeCB':'DarkModeCB'">
+			<!--日间/夜间模式切换按钮-->
+			<i class="modeSwitch far fa-adjust" type="button" @click="modeSwitch" :class="isLight?'LightModeSwitch':'DarkModeSwitch'"></i>
+			<!--头像-->
+			<img id="myImg">
+
+			<!--文字信息及按键-->
+			<div id="info">
+				<!--文字信息-->
+				<div>
+					<h1>
+					贰壹叁
+					</h1>
+					<h2>
+						Always believe <br> good things will happen
+					</h2>
+				</div>
+				<!--进入博客按钮-->
+				<div id="btnBox">
+					<a href="./blog/index.html">To Blog</a>
+				</div>
+				<!--其他按钮-->
+				<table>
+					<tr>
+						<td>
+							<a href="tencent://message/?uin=1290258234&Site=&Menu=yes" class="fab fa-qq"></a>
+						</td>
+						<td>
+							<a href="https://github.com/DSR213" class="fab fa-github"></a>
+						</td>
+						<td>
+							<a href="https://steamcommunity.com/id/DSR213/" class="fab fa-steam"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
