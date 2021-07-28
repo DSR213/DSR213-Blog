@@ -1,27 +1,111 @@
-/*页面背景*/
-.LightModeBG{
-	background: rgb(245, 245, 240);
-}
-.DarkModeBG{
-	background:rgb(40, 45, 50);
-}
+/*
+日间模式按钮颜色：rgb(255, 165, 85);
+夜间模式按钮颜色：rgb(85, 165, 255);
 
-/*首页CardBox背景*/
-.LightModeCB{
-    background:rgb(255, 255, 250);
+日间模式字体颜色：#666;
+夜间模式字体颜色：#DDD;
+
+日间模式背景颜色：rgb(255, 250, 245);
+夜间模式背景颜色：rgb(70, 75, 80);
+*/
+
+/*字体颜色*/
+.LightModeColor{
     color: #666;
 }
-.DarkModeCB{
+.DarkModeColor{
+    color: #DDD;
+}
+/*背景&字体颜色*/
+.LightModeBG{
+    background:rgb(245, 240, 235);
+    color: #666;
+}
+.DarkModeBG{
     background: rgb(70, 75, 80);
     color: #DDD;
 }
 
-/*模式切换按钮角度*/
+/*半透明背景&字体颜色*/
+.LightModeBG_Frosted{
+    background: rgba(255, 250, 245, 0.5);
+    color: #666;
+}
+.DarkModeBG_Frosted{
+    background: rgba(100, 105, 110, 0.5);
+    color: #DDD;
+}
+
+/*模式切换按钮*/
 .LightModeSwitch{
     color: #666;
-    transform: rotate(180deg);
 }
 .DarkModeSwitch{
     color: #DDD;
+}
+i.LightModeSwitch,div.LightModeSwitch i{
+    transform: rotate(180deg);
+}
+i.DarkModeSwitch,div.DarkModeSwitch i{
     transform: rotate(0deg);
 }
+div.LightModeSwitch:hover{
+    border-bottom: 2px solid rgb(255, 165, 85);
+}
+div.DarkModeSwitch:hover{
+    border-bottom: 2px solid rgb(85, 165, 255);
+}
+
+
+/*按钮*/
+.LightModeBtn{
+    background-color: rgb(255, 165, 85); 
+}
+.DarkModeBtn{
+    background-color: rgb(85, 165, 255);
+}
+/*竖屏侧边栏*/
+.LightModeHidden{
+    background:rgb(245, 240, 235);
+}
+.DarkModeHidden{
+    background: rgb(70, 75, 80);
+}
+
+/*其他按钮*/
+.LightModeOtherBtn{
+    color: #666;
+}
+.DarkModeOtherBtn{
+    color: #DDD;
+}
+
+/*按钮滑动效果*/
+.LightModeHover{
+    border: none;
+}
+.DarkModeHover{
+    border: none;
+}
+.LightModeHover:hover{
+    border-bottom: 2px solid rgb(255, 165, 85);
+}
+.DarkModeHover:hover{
+    border-bottom: 2px solid rgb(85, 165, 255);
+}
+/*按钮横向滑动效果*/
+.LightModeCrossHover{
+    border: none;
+}
+.DarkModeCrossHover{
+    border: none;
+}
+.LightModeCrossHover:hover{
+    border-left: 2px solid rgb(255, 165, 85);
+    border-right: 2px solid rgb(255, 165, 85);
+}
+.DarkModeCrossHover:hover{
+    border-left: 2px solid rgb(85, 165, 255);
+    border-right: 2px solid rgb(85, 165, 255);
+}
+

@@ -2,7 +2,7 @@
 #cardBox{
     min-width: 260px;
 	left: 50%;
-	top: 50%;
+	top: 45%;
 	transform: translate(-50%,-50%);
 	position: absolute;
 	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
@@ -17,7 +17,7 @@
     width: 160px;
 	height: 160px;
     margin: 30px;
-    border: 2px solid #333;
+    border: 2px solid #383838;
 	border-radius: 50%;
 	background-image: url(../Images/myImg.png);
 	background-size: cover;
@@ -42,10 +42,12 @@ h1{
     font-weight: 500;
 }
 h2{
-    font-size: 0.8rem;
+    width: 100%;
+    font-size: 0.6rem;
     font-weight: 400;
-    margin-top: 6px;
+    margin-top: 3px;
     letter-spacing: 0.03rem;
+    white-space: nowrap;
 }
 /*进入博客按钮*/
 #btnBox{
@@ -62,8 +64,6 @@ h2{
     width: 6.6rem;
     border-radius: 1.3rem;
     border: none;
-    background-color: rgb(122, 184, 255);
-    text-decoration: none;
     font-size: 1rem;
     line-height: 2.6rem;
     color: #fff;
@@ -73,7 +73,7 @@ h2{
 }
 #btnBox a:hover{
     opacity: 1;
-    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
 }
 /*其他按钮*/
 table{
@@ -84,22 +84,18 @@ table{
 }
 table a{
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #FFF;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+table a:hover{
+    opacity: 1;
 }
 
 /*-----日间/夜间模式切换按钮-----*/
-i.far{
-    position: fixed;
+i.modeSwitch{
     right: 10px;
     top: 10px;
     font-size: 1.5rem;
-    opacity: 0.7;
-    cursor: pointer;
     border-radius: 50%;
-}
-i.far:hover{
-    opacity: 1;
-    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
 }
 
