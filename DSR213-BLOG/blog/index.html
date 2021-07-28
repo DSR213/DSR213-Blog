@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DSR213.Inc</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../title_icon.PNG" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="../FA5Pro/css/all.min.css">
+    
+    <!--日间/夜间模式CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/ModeSwitch.css">
+    
+    
+    <!--JS-->
+    <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    
+    <!--日间/夜间模式JS-->
+    <script defer type="text/javascript" src="../js/ModeSwitch.js"></script>
+
+    <!--移动端适配-->
+    <script defer type="text/javascript" src="../js/mobileAdapation.js"></script>
+
+    <script defer type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <div id="darkMode">
+        <header :class="isLight?'LightModeBG_Frosted':'DarkModeBG_Frosted'">
+            <div id="navBox">
+                <i id="hiddenguide" class="far fa-bars" :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'"></i>
+                <a href="../index.html" id="logo" :class="isLight?'LightModeColor LightModeHover':'DarkModeColor DarkModeHover'">
+                    DSRBLOG
+                </a>
+                <div id="guide">
+                    <a href="" id="homePage" :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'" target="_self">首页</a>
+                    <a href="" id="resume" :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'" target="_self">简历</a>
+                    <a href="" id="project" :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'" target="_self">项目</a>
+                    <a href="" id="dynamic" :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'" target="_self">动态</a>
+                </div>
+                <div class="modeSwitch" :class="isLight?'LightModeSwitch':'DarkModeSwitch'"  @click="modeSwitch">
+                    <i class="far fa-adjust" type="button"></i>
+                </div>
+            </div>
+        </header>
+        <div id="guideoptions" :class="isLight?'LightModeHidden':'DarkModeHidden'">
+            <a href="" :class="isLight?'LightModeOtherBtn LightModeCrossHover':'DarkModeOtherBtn DarkModeCrossHover'" target="_self">首 页</a>
+            <a href="" :class="isLight?'LightModeOtherBtn LightModeCrossHover':'DarkModeOtherBtn DarkModeCrossHover'" target="_self">简 历</a>
+            <a href="" :class="isLight?'LightModeOtherBtn LightModeCrossHover':'DarkModeOtherBtn DarkModeCrossHover'" target="_self">项 目</a>
+            <a href="" :class="isLight?'LightModeOtherBtn LightModeCrossHover':'DarkModeOtherBtn DarkModeCrossHover'" target="_self">动 态</a>
+        </div>
+        <div id="guideothers"></div>
+        <div id="mainBox">
+            <div id="container">
+                <div id="content">
+
+                </div>
+                <div id="side">
+                    <div id="blogcard" :class="isLight?'LightModeBG':'DarkModeBG'">
+                        <div id="myimgbox">
+                            <img src="../Images/myImg.png">
+                        </div>
+                        <div id="info">
+                            <h1>
+                                贰壹叁
+                            </h1>
+                            <h2>
+                                Always believe <br> good things will happen
+                            </h2>
+                        </div>
+                    </div>
+                    <div id="sideguide" :class="isLight?'LightModeBG':'DarkModeBG'">
+                        <tr>
+                            <td>
+                                <a href="https://space.bilibili.com/12778581" class="fas fa-tv-retro" target="_blank"
+                                    :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'"></a>
+                            </td>
+                            <td>
+                                <a href="https://github.com/DSR213" class="fab fa-github" target="_blank"
+                                    :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'"></a>
+                            </td>
+                            <td>
+                                <a href="https://steamcommunity.com/id/DSR213/" class="fab fa-steam" target="_blank"
+                                    :class="isLight?'LightModeOtherBtn LightModeHover':'DarkModeOtherBtn DarkModeHover'"></a>
+                            </td>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

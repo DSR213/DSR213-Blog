@@ -1,0 +1,194 @@
+/*-----日间/夜间模式切换按钮-----*/
+.modeSwitch{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    right: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+}
+/*-----通用圆角&阴影-----*/
+#blogcard,#sideguide{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/*-----菜单栏-----*/
+header{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+#navBox{
+    height: 100%;
+    width: 64rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
+    line-height: 3rem;
+}
+/*-----竖屏导航栏-----*/
+#hiddenguide{
+    position: absolute;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#hiddenguide:hover{
+    opacity: 1;
+}
+#guideoptions{
+    position: fixed;
+    z-index: 98;
+    left: -61.8%;
+    width: 61.8%;
+    height: 100%;
+    box-shadow: 0.15rem 0 0.25rem rgba(0, 0, 0, 0.2);
+    padding: 3rem 2px 0.5rem 2px;
+}
+#guideoptions a{
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+#guideoptions a:hover{
+    opacity: 1;
+}
+#guideothers{
+    position: fixed;
+    padding-top: 3rem;
+    z-index: 99;
+    right: 0;
+    width: 38.2%;
+    height: 100%;
+    margin-top: 3rem;
+    display: none;
+}
+/*--------------------*/
+#logo{
+    position: relative;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    float: left;
+}
+#guide{
+    height: 3rem;
+    position: relative;
+    float: left;
+    margin-left: 1rem;
+}
+#guide a{
+    text-align: center;
+    width: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    position: relative;
+    display: block;
+    float: left;
+    margin-top: 0;
+    opacity: 0.7;
+}
+#guide a:hover{
+    opacity: 1;
+}
+
+/*-----内容-----*/
+#mainBox{
+    width: 100%;
+    height: 100%;
+}
+#container{
+    display: flex;
+    position: absolute;
+    padding: 4rem 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content{
+    width: 48rem;
+    height: 100rem;
+    min-height: 10rem;
+    background: red;
+    margin-right: 1rem;
+}
+
+/*-----侧边栏-----*/
+#side{
+    height: 19rem;
+    position: -webkit-sticky;
+    float: right;
+    top: 4rem;
+}
+#blogcard{
+    width: 100%;
+    height: 14rem;
+    padding: 1rem;
+}
+#myimgbox{
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+#myimgbox img{
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: 1px solid #383838;
+	border-radius: 50%;
+}
+#info{
+    position: relative;
+    width: 100%;
+    padding-top: 0.5rem;
+    height: 6rem;
+    text-align: center;
+    cursor: default;
+}
+#info h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.23rem;
+    font-weight: 500;
+}
+#info h2{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+}
+
+/*-----侧边导航-----*/
+#sideguide{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+}
+#sideguide a{
+    width: 3rem;
+    height: 100%;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+#sideguide a:hover{
+    opacity: 1;
+}
